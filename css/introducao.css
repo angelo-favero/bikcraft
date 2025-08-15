@@ -1,0 +1,40 @@
+.introducao-bg {
+  background-color: var(--c12);
+  max-height: 49vh;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  gap: 0 40px;
+  color: white;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 4rem;
+  line-height: 1.125;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #b2b2b2;
+  margin-bottom: 20px;
+}
+.introducao a {
+  padding: 20px 40px;
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  color: var(--c12);
+}
+
+span {
+  color: #ffbb00;
+}
