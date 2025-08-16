@@ -2,14 +2,12 @@
   background-color: var(--c12);
 }
 
-.header-container {
+.header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
   gap: 20px;
 }
@@ -55,7 +53,7 @@
     padding: 12px 16px;
     border-radius: 4px;
   }
-  .header-container .header-menu a::after {
+  .header .header-menu a::after {
     display: none;
   }
   .header-menu a:hover {
