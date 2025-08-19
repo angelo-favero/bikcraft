@@ -60,3 +60,27 @@
 .botao.secundario:hover {
   background: var(--c9);
 }
+
+/* cabeçalho interno*/
+
+.cabecalho-bg {
+  background-color: var(--c11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.cabecalho p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .cabecalho-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .cabecalho p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}

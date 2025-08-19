@@ -1,0 +1,17 @@
+.cabecalho {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.cabecalho h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.cabecalho p + h2 {
+  margin-top: 40px;
+}
+
+.cabecalho p {
+  max-width: 75ch;
+  margin-bottom: 24px;
+}
