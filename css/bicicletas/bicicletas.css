@@ -1,63 +1,103 @@
-.bicicletas {
-  padding-top: 60px;
-  padding-bottom: 120px;
+.bicicletas-bg {
+  background: linear-gradient(to right, var(--c0) 30%, var(--c11) 0%);
 }
 
-.bicicletas h2 {
-  margin-bottom: 40px;
-}
-
-.bicicletas-listas {
-  display: flex;
+.bicicletas-dispo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 1400px;
-  padding: 0 20px 20px 20px;
-  margin: 0 auto;
-  overflow-x: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.bicicletas-listas a {
+.bicicletas-img {
+  display: grid;
+}
+
+.bicicletas-img img {
+  grid-area: 1/1;
+}
+
+.bicicletas-img span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background-color: var(--c12);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.bicicletas-conteudo h2,
+.bicicletas-conteudo p {
+  grid-column: 1/-1;
+}
+
+.bicicletas-dispo h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas-dispo h2::before {
+  content: "";
   display: block;
-}
-
-.bicicletas-listas li {
-  min-width: 280px;
-}
-
-.bicicletas-listas img {
-  margin-bottom: 16px;
-}
-
-.bicicletas-listas h3 {
-  display: flex;
-  align-items: center;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
   margin-bottom: 8px;
 }
 
-.bicicletas-listas h3::before {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 8px;
-  margin-right: 8px;
-  background: var(--p1);
-  transition: width 0.2s;
+.bicicletas-dispo p {
+  margin-bottom: 32px;
 }
 
-.bicicletas-listas a:hover h3::before {
+.bicicletas-dispo a {
+  place-self: end;
+}
+
+.bicicletas-dispo li {
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas-dispo li + li {
+  margin-top: 16px;
+}
+
+.bicicletas-conteudo img {
   width: 24px;
-}
-
-.bicicletas-listas li span {
-  padding-left: 20px;
+  margin-right: 8px;
 }
 
 @media (max-width: 800px) {
-  .bicicletas-listas {
-    gap: 20px;
+  .bicicletas-bg {
+    background: var(--c11);
   }
 
-  .bicicletas-bg {
-    padding-bottom: 60px;
+  .bicicletas-dispo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-dispo ul {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+    font-size: 1rem;
+  }
+
+  .bicicletas-dispo a {
+    place-self: start;
   }
 }

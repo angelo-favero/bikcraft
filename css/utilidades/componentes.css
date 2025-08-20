@@ -1,3 +1,4 @@
+/* container */
 .container {
   box-sizing: border-box;
   max-width: 1200px;
@@ -6,6 +7,7 @@
   padding-right: 20px;
 }
 
+/* botão */
 .botao {
   padding: 16px 32px;
   display: inline-block;
@@ -32,6 +34,7 @@
   }
 }
 
+/* link */
 .link {
   display: inline-block;
   color: var(--p1);
@@ -52,6 +55,7 @@
   color: var(--c0);
 }
 
+/* Botão Secundario*/
 .botao.secundario {
   background: var(--c10);
   color: var(--p2);
@@ -61,8 +65,27 @@
   background: var(--c9);
 }
 
-/* cabeçalho interno*/
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
 
+/* Botão seta*/
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: 300ms transform ease-in-out;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
+/* cabeçalho interno*/
 .cabecalho-bg {
   background-color: var(--c11);
   padding-top: 60px;
@@ -71,6 +94,7 @@
 
 .cabecalho p {
   margin-bottom: 4px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 800px) {
