@@ -1,17 +1,17 @@
-.cabecalho {
+.termo {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.cabecalho h2 {
+.termo h2 {
   font-weight: 600;
   margin-bottom: 20px;
 }
-.cabecalho p + h2 {
+.termo p + h2 {
   margin-top: 40px;
 }
 
-.cabecalho p {
+.termo p {
   max-width: 75ch;
   margin-bottom: 24px;
 }
